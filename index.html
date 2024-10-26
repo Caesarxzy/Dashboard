@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="summary-section">
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p>Rp. 4.125.000.000</p>
+                </div>
+                <div class="card">
+                    <h3>Orders</h3>
+                    <p>3,200</p>
+                </div>
+                <div class="card">
+                    <h3>Customers</h3>
+                    <p>1,800</p>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <div class="chart-graphic">
+                    <h2> Graphic Chart </h2>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart-category">
+                    <h2> Category Chart</h2>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </section>
+
+            <section>
+                <div class="chart-sales">
+                    <h2>Sales Data Chart</h2>
+                    <canvas id="salesDataChart"></canvas>
+                </div>
+            </section>            
+
+            <section class="table-section">
+                <h2>Product Sales Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Sales</th>
+                            <th>Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Handphone</td>
+                            <td>Electronics</td>
+                            <td>500</td>
+                            <td>Rp. 1.800.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Headphones</td>
+                            <td>Accessories</td>
+                            <td>300</td>
+                            <td>Rp. 675.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Gaming Laptop</td>
+                            <td>Electronics</td>
+                            <td>150</td>
+                            <td>Rp. 1.125.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Sneakers</td>
+                            <td>Fashion</td>
+                            <td>700</td>
+                            <td>Rp. 525.000.000</td>
+                        </tr>
+                            <td>T-Shirts</td>
+                            <td>Fashion</td>
+                            <td>1500</td>
+                            <td>Rp. 325.000.000</td>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
